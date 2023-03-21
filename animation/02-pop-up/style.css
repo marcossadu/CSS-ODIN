@@ -52,6 +52,33 @@ button {
   opacity: 0%;
 }
 
+.popup-modal:target {
+  opacity: 100%;
+  pointer-events: all;
+}
+
+.popup-modal:target ~ .backdrop {
+  opacity: 30%;
+  pointer-events: all;
+}
+
+.popup-modal button {
+  background-color: #ccc;
+}
+
+.popup-modal button:hover {
+  background-color: #aaa;
+}
+
+.popup-modal a {
+  text-decoration: none;
+  color: #000;
+}
+
+.popup-modal a:hover {
+  text-decoration: underline;
+}
+
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
@@ -59,5 +86,5 @@ button {
 
 .backdrop.show {
   opacity: 30%;
+  pointer-events: all;
 }
-
